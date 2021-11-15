@@ -1,13 +1,17 @@
 const lg = console.log;
 
 const groupLog = (title) => (f) => {
-  console.log(`start========${title} =======`);
+  console.log(`${title}====start===============`);
   try {
+    setTimeout(() => {
+      lg(`-${title}-----after callstack---------`);
+      lg();
+    }, 0);
     f();
   } catch (e) {
     lg("****에러****", e);
   }
-  console.log(`end-----------${title} -----------`);
+  console.log(`${title}------end----------------------`);
   console.log();
 };
 
