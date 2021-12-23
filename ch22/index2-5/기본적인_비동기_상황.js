@@ -8,3 +8,5 @@ groupLog("기본적인 비동기적인 상황")(() => {
 
   // 1,3, out of callstack 2
 });
+
+export default function asd() {}

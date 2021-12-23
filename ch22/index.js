@@ -1,3 +1,4 @@
+import asd from "ch22/index2-5/기본적인_비동기_상황";
 const { groupLog, lg } = require("../utils");
 groupLog("key/value")(() => {
   var obj = { a: 1, b: 2 };
